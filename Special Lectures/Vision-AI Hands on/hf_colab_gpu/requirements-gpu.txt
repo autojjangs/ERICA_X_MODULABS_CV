@@ -1,0 +1,7 @@
+# requirements-torch.txt 설치 후 이 목록을 설치하고 커널을 재시작합니다.
+transformers==4.57.6       # 모델 구조·전처리 불러오기
+huggingface_hub==0.36.0   # Transformers 4.57.6 호환 버전
+safetensors==0.8.0       # 학습한 모델 저장
+numpy==2.5.2             # 이미지·라벨·평가 배열
+Pillow==12.3.0           # 이미지 열기
+matplotlib==3.11.1       # 추론 결과와 학습 그래프

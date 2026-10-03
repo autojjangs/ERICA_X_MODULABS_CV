@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-19T04:24:17+00:00",
+  "status": "passed_with_existing_cache",
+  "root": "/workspaces/vision-ai-codespaces-verification-20260919",
+  "actual_codespace_environment": true,
+  "driver_sha256": "00f59abe69dc4a0fdfdb2757ca7d4b9d7b552ebf2dbc2071010a305c82363f14",
+  "environment_evidence": "CODESPACES must equal the literal string true; no account credentials are read",
+  "scope": "Existing Codespace CPU setup and public HF model/data preparation only; no Colab GPU or TPU execution",
+  "post_create_verified": true,
+  "cacheless": false,
+  "stages": [
+    {
+      "name": "environment",
+      "status": "passed",
+      "started_at": "2026-09-19T04:24:17+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 0.135,
+      "stdout": "environment.stdout.txt",
+      "stderr": "environment.stderr.txt"
+    },
+    {
+      "name": "doctor_before",
+      "status": "passed",
+      "started_at": "2026-09-19T04:24:17+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 2.922,
+      "stdout": "doctor_before.stdout.txt",
+      "stderr": "doctor_before.stderr.txt"
+    },
+    {
+      "name": "notebook_00",
+      "status": "passed",
+      "started_at": "2026-09-19T04:24:20+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 4.039,
+      "stdout": "notebook_00.stdout.txt",
+      "stderr": "notebook_00.stderr.txt"
+    },
+    {
+      "name": "doctor_after",
+      "status": "passed",
+      "started_at": "2026-09-19T04:24:24+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 1.943,
+      "stdout": "doctor_after.stdout.txt",
+      "stderr": "doctor_after.stderr.txt"
+    },
+    {
+      "name": "pytest",
+      "status": "passed",
+      "started_at": "2026-09-19T04:24:26+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 1.056,
+      "stdout": "pytest.stdout.txt",
+      "stderr": "pytest.stderr.txt"
+    }
+  ],
+  "codespace_name": "vision-ai-clean-build-g66rr9j7pjp3wx4x",
+  "kernel": {
+    "name": "codespaces-vision-ai",
+    "python": "/workspaces/vision-ai-codespaces-verification-20260919/.venv/bin/python",
+    "display_name": "Vision AI (Codespaces CPU)"
+  },
+  "initial_cache": {
+    ".cache/huggingface": {
+      "exists": true,
+      "files": 1,
+      "bytes": 34551,
+      "symlinks": 0,
+      "empty": false
+    },
+    ".cache/data": {
+      "exists": true,
+      "files": 2,
+      "bytes": 142291368,
+      "symlinks": 0,
+      "empty": false
+    },
+    "hf_colab_gpu/models/deit-tiny": {
+      "exists": true,
+      "files": 11,
+      "bytes": 23020647,
+      "symlinks": 0,
+      "empty": false
+    },
+    "data/prepared": {
+      "exists": true,
+      "files": 4,
+      "bytes": 2103751,
+      "symlinks": 0,
+      "empty": false
+    }
+  },
+  "external_cache_override_present": false,
+  "cache_scope": "Model and dataset cache only; postCreate package-download caches are excluded",
+  "source_sha256": {
+    ".vision-lab-root": "3de3bde4760a1f43d80a30b7bc3fd2b4a2d147a3a7483e9dc2cc1f1a7a35c746",
+    ".devcontainer/devcontainer.json": "312e86355959d4554126fcd7802a9e37e1ea1cd6ef518550e5e64d2fdb3d302b",
+    ".devcontainer/Dockerfile": "5353a22a22407437e4147c90a19a433f352cb93aab6333c03458f9e11111a53e",
+    ".vscode/settings.json": "6cd13c60de4d6189ba6bbcc632b7522fb80794652e655ad2789c89525c7af051",
+    ".gitignore": "88d2728e5d9de6beb631523908c5f24b1d5f4f1d0c35ecf68d48df888c075402",
+    ".dockerignore": "a602e01ab2c15823877770730264bc333fb443aa898cc953ab1d580bb4f1ac22",
+    "pytest.ini": "3eba30a623bd995a5264095104c52846fba6ed8e6e17885521e64b9434dd83bd",
+    "requirements/codespaces.txt": "1804df08554e8219523ee2d334833ad707152e79896c932bf784fba225819af3",
+    "scripts/setup.sh": "61cd1e8a1dbc7cc18de455ca15f0178399b522581e8e3d66524fe905f80e915c",
+    "scripts/doctor.py": "af2525492fea63e39d9d452778200719d3afa7caab1b6ae89c874fcf759a4a4b",
+    "README.md": "35ec28abe08dfaa533fef353e0ca554ebebdaa16ae3a755d5daa6b130aa9dc5c",
+    "hf_colab_gpu/README.md": "92d9016246980f1c1447e13225bd6fe150204815b00391e85ca2e86651a1d171",
+    "hf_colab_gpu/requirements-torch.txt": "6d0f6c06074291597aa1ce4908c2e64b5e4b8cc5116ca5d30a53c0865a7ad102",
+    "hf_colab_gpu/requirements-gpu.txt": "dd9fd18bd61f8fd6d0e358d0c5786c78a1c781d16563ecef672a644695b1c61a",
+    "hf_colab_gpu/notebooks/00_hf_download_and_data.ipynb": "c3ec93fbd694c9fcd472a7729fde9e3ca86cb6a67ce998b2154429920d4f0ae8",
+    "hf_colab_gpu/notebooks/01_gpu_inference.ipynb": "b9ba98966c3aff26677dc2d4047835fab49a8f953f548379b3a450c6756c5a03",
+    "hf_colab_gpu/notebooks/02_gpu_finetuning.ipynb": "84a9a986a32ccab83b7411210006458079577bd1eb95534815f7fc790d64aaf7",
+    "tests/test_direct_training.py": "aa7c58fc338ff5c1df2bf85da5528cbdeba746471e1bf4d0c25d26026e032325",
+    "tests/test_distribution.py": "2e6b85608ca0a62cfbe3350de5ca903574e339e588824e7da138512d9867abd1",
+    "tests/test_environment.py": "6ee5cf3cd1f459aba9d169ffb96dbfea5ce4a11f7012dbff9bde0ef61be4b3d6",
+    "tests/test_hf_notebooks.py": "60e16f54ddfcc61e7724f207ca323dec9c33a1cdaededb31867687abf47d157b"
+  },
+  "environment": {
+    "python": "3.12.11",
+    "executable": "/workspaces/vision-ai-codespaces-verification-20260919/.venv/bin/python",
+    "prefix": "/workspaces/vision-ai-codespaces-verification-20260919/.venv",
+    "versions": {
+      "numpy": "2.5.2",
+      "Pillow": "12.3.0",
+      "huggingface-hub": "0.36.0",
+      "google-colab-cli": "0.6.0",
+      "jupyter-kernel-client": "0.9.0",
+      "pyarrow": "20.0.0",
+      "matplotlib": "3.11.1",
+      "ipykernel": "7.3.0",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.4",
+      "pytest": "9.1.1"
+    },
+    "hf_cli": {
+      "path": "/workspaces/vision-ai-codespaces-verification-20260919/.venv/bin/hf",
+      "distribution_version": "0.36.0"
+    },
+    "optional_jax_installed": false,
+    "optional_torch_installed": false
+  },
+  "executed_notebook": "00_hf_download_and_data_executed.ipynb",
+  "preparation_notebook": {
+    "code_cells": 17,
+    "error_outputs": 0,
+    "all_code_cells_executed": true,
+    "image_outputs": 1
+  },
+  "pytest_summary": "17 passed, 1 skipped in 0.68s",
+  "expected_test_baseline": "17 passed, 1 skipped for the basic environment; skipped optional JAX tests are allowed",
+  "final_cache": {
+    ".cache/huggingface": {
+      "exists": true,
+      "files": 1,
+      "bytes": 34551,
+      "symlinks": 0,
+      "empty": false
+    },
+    ".cache/data": {
+      "exists": true,
+      "files": 2,
+      "bytes": 142291368,
+      "symlinks": 0,
+      "empty": false
+    },
+    "hf_colab_gpu/models/deit-tiny": {
+      "exists": true,
+      "files": 11,
+      "bytes": 23020647,
+      "symlinks": 0,
+      "empty": false
+    },
+    "data/prepared": {
+      "exists": true,
+      "files": 4,
+      "bytes": 2103751,
+      "symlinks": 0,
+      "empty": false
+    }
+  },
+  "completed_at": "2026-09-19T04:24:27+00:00",
+  "finished_at": "2026-09-19T04:24:27+00:00"
+}

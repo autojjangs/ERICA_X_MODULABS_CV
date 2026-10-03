@@ -1,0 +1,336 @@
+{
+  "passed": true,
+  "notebooks": [
+    {
+      "file": "01_gpu_inference.ipynb",
+      "source_sha256": "b9ba98966c3aff26677dc2d4047835fab49a8f953f548379b3a450c6756c5a03",
+      "cell_errors": 0,
+      "code_cells": 7,
+      "image_outputs": 1
+    },
+    {
+      "file": "02_gpu_finetuning.ipynb",
+      "source_sha256": "84a9a986a32ccab83b7411210006458079577bd1eb95534815f7fc790d64aaf7",
+      "cell_errors": 0,
+      "code_cells": 15,
+      "image_outputs": 2
+    }
+  ],
+  "artifact_hashes_match": true,
+  "device": "Tesla T4",
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.0"
+  },
+  "steps": [
+    {
+      "command": [
+        "new",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "--gpu",
+        "T4"
+      ],
+      "exit_code": 0,
+      "seconds": 15.61
+    },
+    {
+      "command": [
+        "status",
+        "-s",
+        "hf-vision-gpu-0919-b"
+      ],
+      "exit_code": 0,
+      "seconds": 2.87
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/requirements-torch.txt",
+        "content/requirements-torch.txt"
+      ],
+      "exit_code": 0,
+      "seconds": 0.92
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/requirements-gpu.txt",
+        "content/requirements-gpu.txt"
+      ],
+      "exit_code": 0,
+      "seconds": 0.72
+    },
+    {
+      "command": [
+        "exec",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "--timeout",
+        "1800"
+      ],
+      "exit_code": 0,
+      "seconds": 205.05
+    },
+    {
+      "command": [
+        "restart-kernel",
+        "-s",
+        "hf-vision-gpu-0919-b"
+      ],
+      "exit_code": 0,
+      "seconds": 11.19
+    },
+    {
+      "command": [
+        "exec",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "--timeout",
+        "120"
+      ],
+      "exit_code": 0,
+      "seconds": 4.08
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        ".vision-lab-root",
+        "content/vision-ai/.vision-lab-root"
+      ],
+      "exit_code": 0,
+      "seconds": 0.77
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/models/deit-tiny/config.json",
+        "content/vision-ai/hf_colab_gpu/models/deit-tiny/config.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.87
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/models/deit-tiny/preprocessor_config.json",
+        "content/vision-ai/hf_colab_gpu/models/deit-tiny/preprocessor_config.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.72
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/models/deit-tiny/pytorch_model.bin",
+        "content/vision-ai/hf_colab_gpu/models/deit-tiny/pytorch_model.bin"
+      ],
+      "exit_code": 0,
+      "seconds": 5.83
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "hf_colab_gpu/models/deit-tiny/download_manifest.json",
+        "content/vision-ai/hf_colab_gpu/models/deit-tiny/download_manifest.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.82
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "data/prepared/manifest.json",
+        "content/vision-ai/data/prepared/manifest.json"
+      ],
+      "exit_code": 0,
+      "seconds": 5.73
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "data/prepared/train.npz",
+        "content/vision-ai/data/prepared/train.npz"
+      ],
+      "exit_code": 0,
+      "seconds": 1.82
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "data/prepared/validation.npz",
+        "content/vision-ai/data/prepared/validation.npz"
+      ],
+      "exit_code": 0,
+      "seconds": 1.47
+    },
+    {
+      "command": [
+        "upload",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "data/prepared/test.npz",
+        "content/vision-ai/data/prepared/test.npz"
+      ],
+      "exit_code": 0,
+      "seconds": 1.52
+    },
+    {
+      "command": [
+        "exec",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "-f",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/notebooks/01_gpu_inference.ipynb",
+        "--timeout",
+        "1800"
+      ],
+      "exit_code": 0,
+      "seconds": 30.04
+    },
+    {
+      "command": [
+        "exec",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "-f",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/notebooks/02_gpu_finetuning.ipynb",
+        "--timeout",
+        "1800"
+      ],
+      "exit_code": 0,
+      "seconds": 15.46
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/inference_report.json",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/inference_report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.72
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/pretrained_top5.png",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/pretrained_top5.png"
+      ],
+      "exit_code": 0,
+      "seconds": 0.77
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/report.json",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.72
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/training.csv",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/training.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 1.02
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/predictions.csv",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/predictions.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 1.02
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/learning_curves.png",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/learning_curves.png"
+      ],
+      "exit_code": 0,
+      "seconds": 1.07
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/confusion_comparison.png",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/confusion_comparison.png"
+      ],
+      "exit_code": 0,
+      "seconds": 1.22
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/finetuned_model/config.json",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/finetuned_model/config.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.12
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/finetuned_model/preprocessor_config.json",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/finetuned_model/preprocessor_config.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.82
+    },
+    {
+      "command": [
+        "download",
+        "-s",
+        "hf-vision-gpu-0919-b",
+        "content/vision-ai/hf_colab_gpu/results/gpu/finetuned_model/model.safetensors",
+        "/home/leeyb/260922_강의/vision_ai_notbook/hf_colab_gpu/validation/gpu/finetuned_model/model.safetensors"
+      ],
+      "exit_code": 0,
+      "seconds": 3.07
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "status": "completed",
+  "platform": "gpu",
+  "accelerator_verified": true,
+  "device": "Tesla T4",
+  "model_id": "facebook/deit-tiny-patch16-224",
+  "model_revision": "b3428f18dcc7b543470d07f14b4a4157815d1880",
+  "download_manifest_sha256": "29c11c1832b8f23bf0c8d482127c97976286a6bd83470ac124df5cb040b0baf7",
+  "dataset_manifest_sha256": "11720202c9950f46c2261787f21bfd402977bf53b7c7f8ddefa501288088051c",
+  "dataset_sha256": "f9839f99284c05ef8adda2a5a0b5f7b0548237ebfeff3b9f68bf8faefffe813b",
+  "classes": [
+    "bottle",
+    "bowl",
+    "can",
+    "cup",
+    "plate"
+  ],
+  "split_counts": {
+    "train": 500,
+    "validation": 100,
+    "test": 200
+  },
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.0"
+  },
+  "config": {
+    "seed": 42,
+    "batch_size": 16,
+    "head_epochs": 3,
+    "finetune_epochs": 3,
+    "head_lr": 0.001,
+    "finetune_lr": 0.0001,
+    "optimizer": "Adam",
+    "checkpoint_selection": "validation_accuracy_then_loss"
+  },
+  "trainable_parameters": 446213,
+  "stages": {
+    "head": {
+      "selected_epoch": 3,
+      "validation": {
+        "loss": 0.5761427736282348,
+        "accuracy": 0.83,
+        "macro_f1": 0.828696111304807,
+        "count": 100,
+        "confusion_matrix": [
+          [
+            19,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            13,
+            0,
+            2,
+            5
+          ],
+          [
+            1,
+            0,
+            18,
+            0,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            15,
+            2
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            18
+          ]
+        ]
+      },
+      "test": {
+        "loss": 0.6441199660301209,
+        "accuracy": 0.8,
+        "macro_f1": 0.8002357334968927,
+        "count": 200,
+        "confusion_matrix": [
+          [
+            35,
+            2,
+            3,
+            0,
+            0
+          ],
+          [
+            2,
+            27,
+            1,
+            2,
+            8
+          ],
+          [
+            2,
+            1,
+            33,
+            1,
+            3
+          ],
+          [
+            1,
+            4,
+            3,
+            32,
+            0
+          ],
+          [
+            0,
+            5,
+            1,
+            1,
+            33
+          ]
+        ]
+      }
+    },
+    "finetune": {
+      "selected_epoch": 2,
+      "validation": {
+        "loss": 0.46274321973323823,
+        "accuracy": 0.85,
+        "macro_f1": 0.8506290115532735,
+        "count": 100,
+        "confusion_matrix": [
+          [
+            19,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            0,
+            17,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            16,
+            2
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            18
+          ]
+        ]
+      },
+      "test": {
+        "loss": 0.5410275650024414,
+        "accuracy": 0.81,
+        "macro_f1": 0.8091281439997744,
+        "count": 200,
+        "confusion_matrix": [
+          [
+            38,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            27,
+            1,
+            4,
+            7
+          ],
+          [
+            2,
+            2,
+            31,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3,
+            33,
+            1
+          ],
+          [
+            0,
+            5,
+            1,
+            1,
+            33
+          ]
+        ]
+      }
+    }
+  },
+  "verification": {
+    "frozen_parameters_unchanged": true,
+    "last_block_changed": true,
+    "reload_max_abs_diff": 0.0,
+    "frozen_before": "503615f655fcbb614f2d32f29d093fef612c46da06339295657a74f55514d21d",
+    "frozen_after": "503615f655fcbb614f2d32f29d093fef612c46da06339295657a74f55514d21d",
+    "last_block_before": "d70a7df1029becc42a59fab33debf7170b60f9bcf498c617e5eca187f967e20e",
+    "last_block_after": "7288cda84c4dc1d6aad4fbbdd700a25a799f41a1d3d61e22c23063005f221f67"
+  },
+  "checkpoint": {
+    "path": "finetuned_model",
+    "format": "safetensors",
+    "sha256": "ed346e5eaa4680580a2e7e04766143870dbc0db93e430cc72f9c63acdf0b9bf5"
+  },
+  "elapsed_seconds": 12.868419956000025,
+  "artifacts": [
+    "training.csv",
+    "predictions.csv",
+    "learning_curves.png",
+    "confusion_comparison.png",
+    "finetuned_model/config.json",
+    "finetuned_model/preprocessor_config.json",
+    "finetuned_model/model.safetensors"
+  ],
+  "artifact_sha256": {
+    "training.csv": "e6fdae4b101cf4f71cb06c5aa594fdaa9185d1540324aba7ede6b2b786060c90",
+    "predictions.csv": "442ce1b4df029a648abb829d06ce3eb55efec09e57a7385358eba2e1e28f2d9e",
+    "learning_curves.png": "eaa6048c2d125595f4bad43448255a6200ce7ec372c0f1b5255e01606f0f5297",
+    "confusion_comparison.png": "e56b4e0753a1b4eed2c78738ccb93f221db76794ec602252d5e1b9dff1c477bd",
+    "finetuned_model/config.json": "9033f329ac2e8e714758014575465440eaa7cb638aea11d4ae0ff46a12ffb312",
+    "finetuned_model/preprocessor_config.json": "445c77049d082004aa07593344d5e1f521f1198228bf586196f70ce7ae021414",
+    "finetuned_model/model.safetensors": "ed346e5eaa4680580a2e7e04766143870dbc0db93e430cc72f9c63acdf0b9bf5"
+  }
+}

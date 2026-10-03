@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "method": "actual hf CLI within notebook",
+  "notebook": "00_hf_download_and_data.ipynb",
+  "elapsed_seconds": 5.57,
+  "kernel": "Codespaces-compatible local Python 3.12; not an actual Codespace"
+}

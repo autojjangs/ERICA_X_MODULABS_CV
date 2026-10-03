@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vision Pipeline 추론"
+  short_description: "Hub 모델을 Colab T4에서 추론하고 결과 회수와 종료 확인"
+  default_prompt: "$vision-pipeline-inference 00번의 cup 이미지를 Colab T4에서 추론하고 결과와 세션 종료를 확인해 줘."

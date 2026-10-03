@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "verified_at": "2026-09-19",
+  "actual_codespaces_verified": true,
+  "repository": "https://github.com/yblee110/vision-ai-codespaces-verification-20260919",
+  "repository_private": true,
+  "codespace_name": "vision-ai-clean-build-g66rr9j7pjp3wx4x",
+  "machine": {
+    "name": "basicLinux32gb",
+    "cpus": 2,
+    "memory_gb": 8,
+    "storage_gb": 32
+  },
+  "tested_bundle_sha256": "e40b7eedf3f6d9537a1ac89b6aa894b32767ed5aae3c0a93f8c33f660d8d6fa5",
+  "deployed_lesson_files_match_bundle": 123,
+  "automatic_post_create_verified": true,
+  "python": "3.12.11",
+  "cold_start": {
+    "initial_cache_empty": true,
+    "all_17_code_cells_executed": true,
+    "cell_errors": 0,
+    "image_outputs": 1,
+    "scope": "Model/data preparation notebook; initial verification reporter failed after successful notebook execution because stdout contained HF CLI progress."
+  },
+  "completed_verification": {
+    "used_existing_cache": true,
+    "stages": [
+      [
+        "environment",
+        "passed"
+      ],
+      [
+        "doctor_before",
+        "passed"
+      ],
+      [
+        "notebook_00",
+        "passed"
+      ],
+      [
+        "doctor_after",
+        "passed"
+      ],
+      [
+        "pytest",
+        "passed"
+      ]
+    ],
+    "pytest_summary": "17 passed, 1 skipped in 0.68s"
+  },
+  "browser_run_all": {
+    "passed": true,
+    "method": "VS Code browser Run All",
+    "code_cells": 17,
+    "cell_errors": 0,
+    "kernel": "Vision AI (Codespaces CPU)",
+    "code_matches_committed_notebook": true
+  },
+  "student_runtime_code_changes_required": false,
+  "ssh_available": false,
+  "ssh_limitation": "Base image has no SSH server. GitHub CLI status/log/SSH paths are unavailable; verification used actual Codespaces browser terminal and notebook editor.",
+  "not_tested_in_this_codespace": [
+    "Student Google OAuth first login",
+    "New Colab GPU/TPU allocation from Codespaces"
+  ],
+  "prior_colab_gpu_test": "Separate actual Tesla T4 validation: trained head 80%, fine-tuned 81%",
+  "source_sha256": {
+    ".vision-lab-root": "3de3bde4760a1f43d80a30b7bc3fd2b4a2d147a3a7483e9dc2cc1f1a7a35c746",
+    ".devcontainer/devcontainer.json": "312e86355959d4554126fcd7802a9e37e1ea1cd6ef518550e5e64d2fdb3d302b",
+    ".devcontainer/Dockerfile": "5353a22a22407437e4147c90a19a433f352cb93aab6333c03458f9e11111a53e",
+    ".vscode/settings.json": "6cd13c60de4d6189ba6bbcc632b7522fb80794652e655ad2789c89525c7af051",
+    ".gitignore": "88d2728e5d9de6beb631523908c5f24b1d5f4f1d0c35ecf68d48df888c075402",
+    ".dockerignore": "a602e01ab2c15823877770730264bc333fb443aa898cc953ab1d580bb4f1ac22",
+    "pytest.ini": "3eba30a623bd995a5264095104c52846fba6ed8e6e17885521e64b9434dd83bd",
+    "requirements/codespaces.txt": "1804df08554e8219523ee2d334833ad707152e79896c932bf784fba225819af3",
+    "scripts/setup.sh": "61cd1e8a1dbc7cc18de455ca15f0178399b522581e8e3d66524fe905f80e915c",
+    "scripts/doctor.py": "af2525492fea63e39d9d452778200719d3afa7caab1b6ae89c874fcf759a4a4b",
+    "README.md": "35ec28abe08dfaa533fef353e0ca554ebebdaa16ae3a755d5daa6b130aa9dc5c",
+    "hf_colab_gpu/README.md": "92d9016246980f1c1447e13225bd6fe150204815b00391e85ca2e86651a1d171",
+    "hf_colab_gpu/requirements-torch.txt": "6d0f6c06074291597aa1ce4908c2e64b5e4b8cc5116ca5d30a53c0865a7ad102",
+    "hf_colab_gpu/requirements-gpu.txt": "dd9fd18bd61f8fd6d0e358d0c5786c78a1c781d16563ecef672a644695b1c61a",
+    "hf_colab_gpu/notebooks/00_hf_download_and_data.ipynb": "c3ec93fbd694c9fcd472a7729fde9e3ca86cb6a67ce998b2154429920d4f0ae8",
+    "hf_colab_gpu/notebooks/01_gpu_inference.ipynb": "b9ba98966c3aff26677dc2d4047835fab49a8f953f548379b3a450c6756c5a03",
+    "hf_colab_gpu/notebooks/02_gpu_finetuning.ipynb": "84a9a986a32ccab83b7411210006458079577bd1eb95534815f7fc790d64aaf7",
+    "tests/test_direct_training.py": "aa7c58fc338ff5c1df2bf85da5528cbdeba746471e1bf4d0c25d26026e032325",
+    "tests/test_distribution.py": "2e6b85608ca0a62cfbe3350de5ca903574e339e588824e7da138512d9867abd1",
+    "tests/test_environment.py": "6ee5cf3cd1f459aba9d169ffb96dbfea5ce4a11f7012dbff9bde0ef61be4b3d6",
+    "tests/test_hf_notebooks.py": "60e16f54ddfcc61e7724f207ca323dec9c33a1cdaededb31867687abf47d157b"
+  }
+}

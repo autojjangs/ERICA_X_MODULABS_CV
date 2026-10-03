@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "scope": "Fresh offline CPU virtual environment using only requirements/codespaces.txt; no cloud resources or notebook execution",
+  "checked_at_utc": "2026-09-19T03:18:35.757275+00:00",
+  "python": "3.12.12 (main, Jan 13 2026, 17:38:09) [Clang 21.1.4 ]",
+  "executable": "/tmp/vision-hf-basic-check/bin/python",
+  "requirements": "requirements/codespaces.txt",
+  "installation": "uv pip install --offline (project wheel cache)",
+  "public_imports": {
+    "numpy": {
+      "version": "2.5.2",
+      "module": "numpy",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/numpy/__init__.py"
+    },
+    "Pillow": {
+      "version": "12.3.0",
+      "module": "PIL.Image",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/PIL/Image.py"
+    },
+    "pyarrow": {
+      "version": "20.0.0",
+      "module": "pyarrow.parquet",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/pyarrow/parquet/__init__.py"
+    },
+    "matplotlib": {
+      "version": "3.11.1",
+      "module": "matplotlib.pyplot",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/matplotlib/pyplot.py"
+    },
+    "huggingface-hub": {
+      "version": "0.36.0",
+      "module": "huggingface_hub",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/huggingface_hub/__init__.py"
+    },
+    "google-colab-cli": {
+      "version": "0.6.0",
+      "module": "colab_cli",
+      "path": null
+    },
+    "jupyter-kernel-client": {
+      "version": "0.9.0",
+      "module": "jupyter_kernel_client",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/jupyter_kernel_client/__init__.py"
+    },
+    "nbformat": {
+      "version": "5.10.4",
+      "module": "nbformat",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/nbformat/__init__.py"
+    },
+    "nbclient": {
+      "version": "0.10.4",
+      "module": "nbclient",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/nbclient/__init__.py"
+    },
+    "pytest": {
+      "version": "9.1.1",
+      "module": "pytest",
+      "path": "/tmp/vision-hf-basic-check/lib/python3.12/site-packages/pytest/__init__.py"
+    }
+  },
+  "modules_confirmed_absent": {
+    "jax": true,
+    "torch": true,
+    "optax": true,
+    "transformers": true,
+    "safetensors": true,
+    "vision_lab": true
+  },
+  "hf_help": "passed",
+  "colab_help": "passed",
+  "pytest": {
+    "returncode": 0,
+    "stdout": "................                                                         [100%]\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_direct_training.py:5: JAX 심화 실습용 라이브러리입니다.\n16 passed, 1 skipped in 0.36s"
+  },
+  "not_validated": [
+    "Codespaces container creation",
+    "Google authentication",
+    "Colab session allocation",
+    "GPU execution",
+    "TPU execution"
+  ],
+  "preparation_notebook_imports": {
+    "notebook": "hf_colab_gpu/notebooks/00_hf_download_and_data.ipynb",
+    "status": "passed",
+    "modules": [
+      "IPython",
+      "PIL",
+      "hashlib",
+      "importlib.metadata",
+      "io",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "pathlib",
+      "pyarrow.parquet",
+      "shutil",
+      "subprocess",
+      "sys",
+      "urllib.request"
+    ],
+    "execution": "all directly imported modules loaded; notebook cells not executed"
+  },
+  "final_basic_tests": {
+    "passed": 17,
+    "skipped_advanced_modules": 1
+  }
+}

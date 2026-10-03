@@ -1,0 +1,13 @@
+{
+  "source": "CIFAR-100 via course notebook 00",
+  "sample_id": "cifar100/test/04570",
+  "ground_truth": "cup",
+  "original_size": [
+    32,
+    32
+  ],
+  "prepared_test_sha256": "70cace5363bff473f50bfd9896c1a4d9b024183a3a717c12429283139b30985d",
+  "image_sha256": "bfd1ca1135d42d9a2604d88071c0229bf45bbda6026ce75c3b117cb5d405081d",
+  "fixture": false,
+  "personal_image": false
+}

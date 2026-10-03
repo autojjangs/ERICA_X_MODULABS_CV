@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "task": "image-classification",
+  "run_id": "76443fdd48a34bf099fcfadfc9ea2f0d",
+  "model_id": "facebook/deit-tiny-patch16-224",
+  "model_revision": "b3428f18dcc7b543470d07f14b4a4157815d1880",
+  "device": "cuda",
+  "device_name": "Tesla T4",
+  "image_sha256": "bfd1ca1135d42d9a2604d88071c0229bf45bbda6026ce75c3b117cb5d405081d",
+  "predictions": [
+    {
+      "label": "face powder",
+      "score": 0.050141479820013046
+    },
+    {
+      "label": "eggnog",
+      "score": 0.040991976857185364
+    },
+    {
+      "label": "frying pan, frypan, skillet",
+      "score": 0.018729209899902344
+    },
+    {
+      "label": "waffle iron",
+      "score": 0.017263351008296013
+    },
+    {
+      "label": "potter's wheel",
+      "score": 0.013867215253412724
+    }
+  ],
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.0"
+  }
+}

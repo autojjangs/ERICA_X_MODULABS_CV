@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vision AI · Hugging Face와 Colab GPU"
+  short_description: "HF CLI로 모델을 받아 Colab GPU에서 추론·파인튜닝하고 결과 회수"
+  default_prompt: "$vision-colab Hugging Face CLI로 이 프로젝트의 모델을 준비하고 Colab GPU에서 추론·파인튜닝한 뒤 결과를 회수하고 세션을 종료해줘."

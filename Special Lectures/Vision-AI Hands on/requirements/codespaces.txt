@@ -1,0 +1,12 @@
+# Codespaces: 모델·데이터 준비와 두 CLI를 설치합니다. GPU 학습은 Colab에서 실행합니다.
+numpy==2.5.2                 # 배열 생성, 데이터 저장·읽기
+Pillow==12.3.0               # from PIL import Image: 이미지 열기·크기 조절
+huggingface_hub[cli]==0.36.0 # hf download: 공개 모델 파일 내려받기
+matplotlib==3.11.1          # 이미지·학습 곡선·혼동행렬 출력
+pyarrow==20.0.0             # 이미지가 담긴 Parquet 데이터 읽기
+ipykernel==7.3.0            # VS Code 노트북의 Python 커널
+nbformat==5.10.4            # 노트북 파일 형식 읽기·검사
+nbclient==0.10.4            # 노트북 실행 검증
+pytest==9.1.1               # 수업 코드 검증
+google-colab-cli==0.6.0     # 터미널의 colab 명령
+jupyter-kernel-client==0.9.0 # Colab CLI 0.6.0의 KernelClient API와 호환

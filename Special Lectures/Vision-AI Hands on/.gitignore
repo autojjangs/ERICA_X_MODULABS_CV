@@ -1,0 +1,42 @@
+# Credentials, Colab session state and generated results are never published.
+.local-state/
+runs/
+results/
+outputs/
+custom_images/
+*_output.ipynb
+.venv/
+.cache/
+.pytest_cache/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.zip
+*.tar.gz
+.env
+.env.*
+!.env.example
+
+# Source data is downloaded by notebook 00; no private samples in Git.
+!data/
+data/*
+!data/.gitkeep
+
+# HF model downloads and generated basic-workshop files stay local.
+hf_colab_gpu/models/
+hf_colab_gpu/data/
+hf_colab_gpu/results/
+hf_colab_gpu/outputs/
+hf_colab_gpu/.cache/
+# Student notebooks live only in hf_colab_gpu/notebooks; evidence keeps reports and figures.
+hf_colab_gpu/validation/**/*.ipynb
+
+# Keep workshop skill sources portable if this folder is nested in another repo.
+!.agents/
+!.agents/skills/
+!.agents/skills/**

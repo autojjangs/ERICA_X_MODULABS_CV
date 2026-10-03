@@ -1,0 +1,11 @@
+{
+  "stop_requested": true,
+  "stop_verified": true,
+  "codespace_name": "vision-ai-clean-build-g66rr9j7pjp3wx4x",
+  "state": "Shutdown",
+  "retention_period_minutes": 60,
+  "repository_retained_private": true,
+  "results_recovered_locally": true,
+  "repository_results_commit": "1edc3d860168e8a07f49f08dbc80263d44756021",
+  "note": "The verification Codespace is stopped. It has a 60-minute retention policy; it was not manually deleted."
+}

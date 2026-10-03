@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-19",
+  "notebooks": [
+    {
+      "file": "00_hf_download_and_data.ipynb",
+      "code_cells": 17,
+      "jax_imports": false,
+      "executed_code_matches_source": true
+    },
+    {
+      "file": "01_gpu_inference.ipynb",
+      "code_cells": 7,
+      "jax_imports": false,
+      "executed_code_matches_source": true
+    },
+    {
+      "file": "02_gpu_finetuning.ipynb",
+      "code_cells": 15,
+      "jax_imports": false,
+      "executed_code_matches_source": true
+    }
+  ],
+  "basic_environment_tests": {
+    "passed": 17,
+    "skipped_optional_jax_module": 1
+  },
+  "with_jax_environment_tests": {
+    "passed": 19
+  },
+  "test_rows": 200,
+  "head_correct": 160,
+  "finetune_correct": 162,
+  "artifacts_match_hashes": true,
+  "visual_inspection": "gallery, pretrained top5, learning curves and confusion matrices reviewed; readable with no clipping",
+  "colab_gpu_verified": true,
+  "colab_session_stopped": true,
+  "first_codespace_container_build_verified": true,
+  "first_install_timeout_corrected": true,
+  "codespaces_verification": "codespaces/report.json",
+  "codespaces_scope": "Actual new Codespace automatic setup, cold model/data notebook, complete CPU checks, and browser Run All. Colab first OAuth/GPU from this Codespace not repeated."
+}

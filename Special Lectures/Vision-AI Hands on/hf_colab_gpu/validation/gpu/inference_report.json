@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "platform": "gpu",
+  "device": "Tesla T4",
+  "model_id": "facebook/deit-tiny-patch16-224",
+  "model_revision": "b3428f18dcc7b543470d07f14b4a4157815d1880",
+  "download_manifest_sha256": "29c11c1832b8f23bf0c8d482127c97976286a6bd83470ac124df5cb040b0baf7",
+  "dataset_sha256": "f9839f99284c05ef8adda2a5a0b5f7b0548237ebfeff3b9f68bf8faefffe813b",
+  "sample_id": "cifar100/test/04570",
+  "ground_truth": "cup",
+  "top5": [
+    {
+      "label": "face powder",
+      "probability": 0.050141479820013046
+    },
+    {
+      "label": "eggnog",
+      "probability": 0.040991976857185364
+    },
+    {
+      "label": "frying pan, frypan, skillet",
+      "probability": 0.018729209899902344
+    },
+    {
+      "label": "waffle iron",
+      "probability": 0.017263351008296013
+    },
+    {
+      "label": "potter's wheel",
+      "probability": 0.013867215253412724
+    }
+  ],
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.0"
+  }
+}
