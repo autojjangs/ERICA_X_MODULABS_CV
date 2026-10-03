@@ -1,7 +1,6 @@
 # Credentials, Colab session state and generated results are never published.
 .local-state/
 runs/
-results/
 outputs/
 custom_images/
 *_output.ipynb
