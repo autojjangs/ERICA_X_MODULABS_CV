@@ -1,0 +1,18 @@
+test_coco_load_and_temporal_gap (test_data.DataTests.test_coco_load_and_temporal_gap) ... ok
+test_derived_names_share_origin (test_data.DataTests.test_derived_names_share_origin) ... ok
+test_exact_duplicates_removed (test_data.DataTests.test_exact_duplicates_removed) ... ok
+test_stage_order_selection_and_export (test_experiment.ExperimentTests.test_stage_order_selection_and_export) ... ok
+test_ap_penalizes_early_false_positives (test_metrics.BoxMetricsTests.test_ap_penalizes_early_false_positives) ... ok
+test_duplicate_predictions_are_false_positives (test_metrics.BoxMetricsTests.test_duplicate_predictions_are_false_positives) ... ok
+test_empty_split_fails (test_metrics.BoxMetricsTests.test_empty_split_fails) ... ok
+test_iou_and_empty_shapes (test_metrics.BoxMetricsTests.test_iou_and_empty_shapes) ... ok
+test_match_uses_best_unmatched_box (test_metrics.BoxMetricsTests.test_match_uses_best_unmatched_box) ... ok
+test_negative_image_prediction_counts_as_false_positive (test_metrics.BoxMetricsTests.test_negative_image_prediction_counts_as_false_positive) ... ok
+test_no_small_objects_is_not_zero_recall (test_metrics.BoxMetricsTests.test_no_small_objects_is_not_zero_recall) ... ok
+test_perfect_and_missing_ap (test_metrics.BoxMetricsTests.test_perfect_and_missing_ap) ... ok
+test_threshold_keeps_misses_in_denominator (test_metrics.BoxMetricsTests.test_threshold_keeps_misses_in_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.346s
+
+OK

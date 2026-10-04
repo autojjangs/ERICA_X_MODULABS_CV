@@ -1,0 +1,48 @@
+{
+  "category_annotation_counts_before_dedup": {
+    "Truck": 58,
+    "Car": 2104,
+    "Pickup": 278,
+    "Motorcycle": 411,
+    "Bus": 35
+  },
+  "target_category_names": [
+    "Car"
+  ],
+  "duplicates_removed": 0,
+  "box_repairs": [],
+  "unique_images": 143,
+  "negative_images": 15,
+  "acquisition": {
+    "method": "kagglehub",
+    "handle": "pkdarabi/vehicle-detection-image-dataset",
+    "resolved_version_directory": "7"
+  },
+  "annotations": [
+    {
+      "file": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/test/_annotations.coco.json",
+      "sha256": "4b9ad12a94086cd5f8000bc9df792b05a9f9e48929fdf5ba50949c2a47a1de9f"
+    },
+    {
+      "file": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/train/_annotations.coco.json",
+      "sha256": "ffd39777ea26895a4612e9882ad620ccd1695bdbd98155aac5f4c623e0ef4230"
+    },
+    {
+      "file": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/valid/_annotations.coco.json",
+      "sha256": "b46c60113a7d4a5f064e6355f201e440d77b244302eb6ca00aa03af6eee40df1"
+    }
+  ],
+  "split": {
+    "name": "blocked_temporal",
+    "pivot_frame": 3240,
+    "gap_frames": 30,
+    "limitation": "Temporal separation is not an independent camera/scene split. Frame numbers are inferred from names; verify the displayed samples.",
+    "validation_pool": 71,
+    "test_pool": 71,
+    "validation_images": 60,
+    "test_images": 60,
+    "unused_images": 23,
+    "original_dataset_splits_reassigned": true,
+    "reason": "No new model training. Validation/test are rebuilt to reduce adjacent-frame leakage."
+  }
+}

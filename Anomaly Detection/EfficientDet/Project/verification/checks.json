@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-10-04T10:06:47.450294+00:00",
+  "python_files_parsed": 13,
+  "notebook_cells": 25,
+  "notebook_code_cells_parsed": 11,
+  "embedded_source_files_match": 18,
+  "unit_tests_run": 13,
+  "unit_test_failures": 0,
+  "unit_test_errors": 0,
+  "offline_checks_passed": true,
+  "public_submission_verified": false,
+  "note": "This command checks syntax, embedded source and offline fixtures. GPU measurements and publication are outside its scope; saved Colab evidence is recorded in LOCAL_CHECKS.md."
+}

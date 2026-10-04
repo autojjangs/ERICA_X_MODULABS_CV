@@ -1,0 +1,13 @@
+{
+  "items": {
+    "실제 측정 완료": true,
+    "결과 해석·KPT 정리": true,
+    "공개 링크 및 비로그인 확인 기록 입력": false
+  },
+  "repository_url": null,
+  "readme_url": null,
+  "notebook_url": null,
+  "logged_out_check_time": null,
+  "publication_status": "공개 링크 미등록 · 비로그인 열람 확인 기록 없음",
+  "note": "null은 등록된 기록이 없음을 뜻한다. 외부 공개 권한은 아직 확인하지 않았다."
+}

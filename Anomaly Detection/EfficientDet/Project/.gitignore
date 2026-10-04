@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+data/
+vendor/
+weights/
+.cache/
+*.pth
+*.pt
+*.zip
+results/*/predictions/
+results/*/source_images/
+results/*/environment_full.txt
+kaggle.json
+.env

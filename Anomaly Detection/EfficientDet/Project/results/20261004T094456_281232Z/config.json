@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "dataset_handle": "pkdarabi/vehicle-detection-image-dataset/versions/7",
+  "dataset_root": null,
+  "dataset_variant": "No_Apply_Grayscale",
+  "annotation_root": null,
+  "target_category_names": [
+    "Car"
+  ],
+  "validation_images": 60,
+  "test_images": 60,
+  "frame_gap": 30,
+  "sizes": [
+    512,
+    768
+  ],
+  "thresholds": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "baseline": {
+    "size": 512,
+    "threshold": 0.3
+  },
+  "nms_iou": 0.5,
+  "match_iou": 0.5,
+  "ap_score_floor": 0.001,
+  "max_detections": 100,
+  "verify_coco_ap": true,
+  "warmup": 5,
+  "timing_images": 10,
+  "timing_repeats": 3,
+  "conditions": [
+    "original",
+    "dark",
+    "blur"
+  ],
+  "dark_factor": 0.6,
+  "blur_kernel": 5,
+  "blur_sigma": 1.0,
+  "require_cuda": true,
+  "upstream_ref": "15403b5371a64defb2a7c74e162c6e880a7f462c",
+  "experiment_budget_minutes": 55
+}

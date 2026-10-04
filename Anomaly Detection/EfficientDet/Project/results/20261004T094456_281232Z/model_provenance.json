@@ -1,0 +1,13 @@
+{
+  "upstream_url": "https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch.git",
+  "upstream_commit": "15403b5371a64defb2a7c74e162c6e880a7f462c",
+  "weights_url": "https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch/releases/download/1.0/efficientdet-d0.pth",
+  "weights_sha256": "2cd4a8cc51d87576acfddc5c93e82e5d48f635165b948b15d37d1297c83fa10d",
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "device": "cuda",
+  "gpu_name": "Tesla T4",
+  "precision": "float32",
+  "target_score": "COCO slot 2 (car), independent class score",
+  "cudnn_benchmark": false
+}

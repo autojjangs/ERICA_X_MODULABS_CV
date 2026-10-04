@@ -1,0 +1,20 @@
+[
+  {
+    "figure": "example_1.png",
+    "image_id": "910a8e9853b53b3e",
+    "source": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/train/frame_4042_jpg.rf.d81fb40615a71afd3c127ef87eb0bb15.jpg",
+    "selection": "two highest original FP+FN errors and one lowest; descriptive only"
+  },
+  {
+    "figure": "example_2.png",
+    "image_id": "6b512c4afc6cb9a8",
+    "source": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/valid/frame_7628_jpg.rf.e7e1807b28d0110e2cd92a44c63f25cd.jpg",
+    "selection": "two highest original FP+FN errors and one lowest; descriptive only"
+  },
+  {
+    "figure": "example_3.png",
+    "image_id": "e69d73377914c3a2",
+    "source": "No_Apply_Grayscale/No_Apply_Grayscale/Vehicles_Detection.v8i.coco/test/frame_6406_jpg.rf.ff63b851413c468025e0f9f2dad80fd0.jpg",
+    "selection": "two highest original FP+FN errors and one lowest; descriptive only"
+  }
+]

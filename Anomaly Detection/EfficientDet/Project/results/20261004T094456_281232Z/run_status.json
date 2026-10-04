@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-04T09:44:56.281463+00:00",
+  "status": "report_ready_publication_pending",
+  "measured": true,
+  "elapsed_seconds": 128.257874527,
+  "updated_utc": "2026-10-04T09:47:04.539108+00:00",
+  "documentation_updated_utc": "2026-10-04T10:05:23.273291+00:00",
+  "reflection_complete": true,
+  "publication_verified": false
+}

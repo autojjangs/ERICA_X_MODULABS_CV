@@ -1,0 +1,9 @@
+# Colab의 torch/torchvision은 유지한다. 설치 후 환경 버전을 결과에 기록한다.
+numpy>=1.26,<3
+Pillow>=10,<13
+opencv-python-headless>=4.10,<5
+matplotlib>=3.8,<4
+pandas>=2.2,<4
+kagglehub>=0.3,<2
+# 공식 COCO AP50 대조 검증에만 사용. 자체 AP50과 별도 표기.
+pycocotools>=2.0.8,<3

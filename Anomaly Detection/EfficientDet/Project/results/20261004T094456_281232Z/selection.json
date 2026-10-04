@@ -1,0 +1,7 @@
+{
+  "size": 768,
+  "threshold": 0.3,
+  "validation_f1": 0.5204991087344029,
+  "rule": "maximum validation F1; exact tie: lowest median memory-pipeline latency",
+  "frozen_utc": "2026-10-04T09:46:10.614954+00:00"
+}
