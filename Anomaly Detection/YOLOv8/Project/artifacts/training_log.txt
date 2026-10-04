@@ -1,0 +1,172 @@
+Ultralytics 8.4.172 🚀 Python-3.13.15 torch-2.11.0+cu130 CUDA:0 (Tesla T4, 14913MiB)
+engine/trainer: agnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/content/steel_defect_project/dataset/split_01a0a820a4c2/data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=20, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=320, iou=0.7, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov8n.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=yolov8n_e20_img320_seed42, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=20, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/content/steel_defect_project/runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/content/steel_defect_project/runs/yolov8n_e20_img320_seed42, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=2, workspace=None
+Downloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 31.5MB/s 0.0s
+Overriding model.yaml nc=80 with nc=6
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]             
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]             
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]                  
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]                 
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 22        [15, 18, 21]  1    752482  ultralytics.nn.modules.head.Detect           [6, 16, None, [64, 128, 256]] 
+Model summary: 129 layers, 3,012,018 parameters, 3,012,002 gradients, 8.2 GFLOPs
+
+Transferred 319/355 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+AMP: running Automatic Mixed Precision (AMP) checks...
+AMP: downloading yolo26n.pt for AMP checks (one-time, not used for training)...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'weights/yolo26n.pt': 100% ━━━━━━━━━━━━ 5.3MB 77.8MB/s 0.1s
+AMP: checks passed ✅
+train: Fast image access ✅ (ping: 0.0±0.0 ms, read: 788.6±379.1 MB/s, size: 17.9 KB)
+train: Scanning /content/steel_defect_project/dataset/split_01a0a820a4c2/labels/train... 1258 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1258/1258 1.8Kit/s 0.7s0.1s
+train: /content/steel_defect_project/dataset/split_01a0a820a4c2/images/train/crazing_120.jpg: 1 duplicate labels removed
+train: /content/steel_defect_project/dataset/split_01a0a820a4c2/images/train/inclusion_62.jpg: 1 duplicate labels removed
+train: New cache created: /content/steel_defect_project/dataset/split_01a0a820a4c2/labels/train.cache
+albumentations: Blur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01, method='weighted_average', num_output_channels=3), CLAHE(p=0.01, clip_limit=(1.0, 4.0), tile_grid_size=(8, 8))
+val: Fast image access ✅ (ping: 0.1±0.1 ms, read: 424.8±266.9 MB/s, size: 13.9 KB)
+val: Scanning /content/steel_defect_project/dataset/split_01a0a820a4c2/labels/val... 269 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 269/269 2.1Kit/s 0.1s<0.1s
+val: /content/steel_defect_project/dataset/split_01a0a820a4c2/images/val/patches_198.jpg: 1 duplicate labels removed
+val: New cache created: /content/steel_defect_project/dataset/split_01a0a820a4c2/labels/val.cache
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and determining best 'optimizer' and 'lr0' automatically... 
+optimizer: AdamW(lr=0.001, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Plotting labels to /content/steel_defect_project/runs/yolov8n_e20_img320_seed42/labels.jpg... 
+Using 1258 train, 269 val images for fraction=1.0 at imgsz=320
+Using 2 dataloader workers
+Logging results to /content/steel_defect_project/runs/yolov8n_e20_img320_seed42
+Starting training for 20 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       1/20     0.568G      1.846      3.203       1.71         45        320: 100% ━━━━━━━━━━━━ 79/79 8.0it/s 9.9s0.2ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 3.9it/s 2.3s0.1ss
+                   all        269        665      0.398      0.215      0.269      0.117
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       2/20     0.725G      1.715      2.078        1.6         49        320: 100% ━━━━━━━━━━━━ 79/79 11.5it/s 6.9s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 6.4it/s 1.4s0.1s
+                   all        269        665      0.302      0.554      0.421      0.195
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       3/20     0.725G      1.677       1.93      1.608         44        320: 100% ━━━━━━━━━━━━ 79/79 9.7it/s 8.1s<0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.3it/s 1.1s0.1s
+                   all        269        665      0.574      0.434      0.424      0.203
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       4/20     0.732G      1.611      1.821       1.56         37        320: 100% ━━━━━━━━━━━━ 79/79 9.6it/s 8.2s0.1ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.3it/s 1.1s0.1s
+                   all        269        665      0.395      0.502       0.44      0.195
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       5/20     0.732G      1.575      1.755      1.535         61        320: 100% ━━━━━━━━━━━━ 79/79 11.7it/s 6.8s0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.4it/s 1.1s0.1s
+                   all        269        665       0.62      0.501      0.505      0.238
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       6/20     0.732G      1.544      1.705      1.505         40        320: 100% ━━━━━━━━━━━━ 79/79 9.9it/s 8.0s<0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.7it/s 1.0s0.1s
+                   all        269        665      0.703      0.496      0.524      0.263
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       7/20     0.732G      1.523      1.647      1.485         45        320: 100% ━━━━━━━━━━━━ 79/79 9.8it/s 8.1s<0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.5it/s 1.1s0.1s
+                   all        269        665      0.604        0.5      0.516      0.246
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       8/20     0.732G      1.494      1.627      1.472         48        320: 100% ━━━━━━━━━━━━ 79/79 11.4it/s 6.9s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 6.7it/s 1.3s0.2s
+                   all        269        665      0.516      0.558      0.558      0.278
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       9/20     0.732G      1.496      1.594      1.473         51        320: 100% ━━━━━━━━━━━━ 79/79 10.6it/s 7.5s0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.6it/s 1.0s0.1s
+                   all        269        665       0.51      0.586      0.556      0.288
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      10/20     0.732G      1.466      1.521      1.452         34        320: 100% ━━━━━━━━━━━━ 79/79 9.9it/s 8.0s<0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.6it/s 1.0s0.1s
+                   all        269        665       0.68      0.517      0.593      0.303
+Closing dataloader mosaic
+albumentations: Blur(p=0.01, blur_limit=(3, 7)), MedianBlur(p=0.01, blur_limit=(3, 7)), ToGray(p=0.01, method='weighted_average', num_output_channels=3), CLAHE(p=0.01, clip_limit=(1.0, 4.0), tile_grid_size=(8, 8))
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      11/20     0.732G      1.488      1.645       1.51         25        320: 100% ━━━━━━━━━━━━ 79/79 10.9it/s 7.2s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 5.9it/s 1.5s0.2s
+                   all        269        665      0.588      0.543      0.615      0.316
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      12/20     0.732G      1.462      1.556      1.485         28        320: 100% ━━━━━━━━━━━━ 79/79 12.4it/s 6.4s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.9it/s 1.0s0.1s
+                   all        269        665      0.588      0.621       0.63      0.346
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      13/20     0.732G      1.454      1.557      1.496         22        320: 100% ━━━━━━━━━━━━ 79/79 10.7it/s 7.4s0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.8it/s 1.0s0.1s
+                   all        269        665      0.597      0.603      0.648      0.338
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      14/20     0.732G      1.429      1.499      1.465         19        320: 100% ━━━━━━━━━━━━ 79/79 12.6it/s 6.3s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.3it/s 1.1s0.1s
+                   all        269        665      0.544       0.62      0.626      0.344
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      15/20     0.732G      1.399      1.444      1.455         20        320: 100% ━━━━━━━━━━━━ 79/79 11.0it/s 7.2s0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.2it/s 1.1s0.1s
+                   all        269        665      0.664      0.634      0.687      0.378
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      16/20     0.732G      1.383       1.41      1.432         29        320: 100% ━━━━━━━━━━━━ 79/79 10.3it/s 7.6s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.5it/s 1.1s0.1s
+                   all        269        665       0.78      0.552      0.658      0.363
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      17/20     0.732G      1.352      1.357      1.425         17        320: 100% ━━━━━━━━━━━━ 79/79 12.6it/s 6.3s0.2s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.7it/s 1.0s0.1s
+                   all        269        665      0.601      0.637      0.674      0.375
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      18/20     0.732G      1.339      1.353      1.431         21        320: 100% ━━━━━━━━━━━━ 79/79 10.5it/s 7.5s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.9it/s 1.0s0.1s
+                   all        269        665      0.644      0.653      0.679      0.378
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      19/20     0.732G      1.313      1.302      1.388         23        320: 100% ━━━━━━━━━━━━ 79/79 11.0it/s 7.2s.3ss
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 6.5it/s 1.4s0.1s
+                   all        269        665      0.611      0.685      0.689      0.387
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      20/20     0.732G       1.29       1.26      1.378         26        320: 100% ━━━━━━━━━━━━ 79/79 12.6it/s 6.3s0.1s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 8.8it/s 1.0s0.1s
+                   all        269        665      0.624      0.652      0.675      0.381
+
+20 epochs completed in 0.050 hours.
+Optimizer stripped from /content/steel_defect_project/runs/yolov8n_e20_img320_seed42/weights/last.pt, 6.2MB
+Optimizer stripped from /content/steel_defect_project/runs/yolov8n_e20_img320_seed42/weights/best.pt, 6.2MB
+
+Validating /content/steel_defect_project/runs/yolov8n_e20_img320_seed42/weights/best.pt...
+Ultralytics 8.4.172 🚀 Python-3.13.15 torch-2.11.0+cu130 CUDA:0 (Tesla T4, 14913MiB)
+Model summary (fused): 72 layers, 3,006,818 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 9/9 3.0it/s 3.0s0.3s
+                   all        269        665      0.612      0.685      0.689      0.387
+Speed: 0.6ms preprocess, 2.7ms inference, 0.0ms loss, 3.2ms postprocess per image
+Results saved to /content/steel_defect_project/runs/yolov8n_e20_img320_seed42
+
+
+Best weights: /content/steel_defect_project/runs/yolov8n_e20_img320_seed42/weights/best.pt
+{"seconds": 192.68652158900113, "minutes": 3.2114420264833523}

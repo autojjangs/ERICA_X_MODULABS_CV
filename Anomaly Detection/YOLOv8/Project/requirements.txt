@@ -1,0 +1,3 @@
+# GPU가 연결된 Colab에서 사용한다. torch는 Colab에 설치된 버전을 사용한다.
+ultralytics==8.4.172
+gdown==5.2.0

@@ -1,0 +1,13 @@
+{
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "torch": "2.11.0+cu130",
+  "ultralytics": "8.4.172",
+  "gpu": "Tesla T4",
+  "cuda": "13.0",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "timestamp_utc": "2026-10-04T07:34:50.182635+00:00",
+  "seed": 42,
+  "imgsz": 320,
+  "epochs": 20,
+  "batch": 16
+}

@@ -1,0 +1,28 @@
+{
+  "code_cells_executed": 12,
+  "notebook_error_outputs": 0,
+  "training_epochs": 20,
+  "matching_tests_passed": 5,
+  "saved_prediction_metrics_verified": true,
+  "split_counts_and_hash_disjointness_verified": true,
+  "readme_local_links_verified": true,
+  "test_summary": {
+    "test_mAP50": 0.7273913906950512,
+    "test_mAP50_95": 0.41371231113682183,
+    "operating_point": {
+      "confidence": 0.15,
+      "TP": 482,
+      "FP": 426,
+      "FN": 139,
+      "precision": 0.5308370044052864,
+      "recall": 0.7761674718196457,
+      "F2": 0.710495283018868
+    },
+    "images": 271,
+    "gpu": "Tesla T4",
+    "actual_epochs": 20,
+    "selected_on": "validation",
+    "matching_iou": 0.5,
+    "nms_iou": 0.7
+  }
+}
