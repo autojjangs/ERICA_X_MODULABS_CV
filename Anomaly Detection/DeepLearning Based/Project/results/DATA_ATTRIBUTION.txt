@@ -1,0 +1,7 @@
+Dataset: MVTec AD, bottle. Copyright MVTec Software GmbH.
+Source: https://www.mvtec.com/research-teaching/datasets/mvtec-ad
+License for dataset and derived dataset figures: CC BY-NC-SA 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Mirror: foersben/mvtec-ad, revision c75b39616f84db43677bcc8228caaafaf5096d7f
+Method: Defard et al., PaDiM, https://arxiv.org/abs/2011.08785
+Configuration: 128x128 input, 16x16 feature grid, 48 channels, top-1-percent image scores.

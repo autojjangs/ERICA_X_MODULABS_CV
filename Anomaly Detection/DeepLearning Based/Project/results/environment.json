@@ -1,0 +1,57 @@
+{
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "device": "cuda",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA A100-SXM4-80GB",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "Pillow": "11.3.0",
+    "matplotlib": "3.10.0",
+    "joblib": "1.6.0",
+    "ipywidgets": "7.7.1"
+  },
+  "config": {
+    "seed": 42,
+    "image_size": 128,
+    "epochs": 20,
+    "batch_size": 32,
+    "channels": 48,
+    "grid_size": 16,
+    "alpha": 0.05,
+    "score_fraction": 0.01,
+    "padim_sigma": 4.0,
+    "ae_sigma": 2.0
+  },
+  "feature_seconds": 0.130049254998994,
+  "feature_seconds_by_split": {
+    "train": 0.07956777699928352,
+    "cal": 0.022494169999845326,
+    "test": 0.027987307999865152
+  },
+  "fit_seconds_excluding_shared_features": {
+    "PaDiM-lite": 0.2675107860004573,
+    "AutoEncoder": 0.7645416670002305,
+    "OC-SVM": 0.033271815000261995
+  },
+  "thresholds": {
+    "PaDiM-lite": 6.924148082733154,
+    "AutoEncoder": 0.06010966747999191,
+    "OC-SVM": 0.28135550022125244
+  },
+  "checkpoint_roundtrip": {
+    "PaDiM-lite": "passed",
+    "AutoEncoder": "passed",
+    "OC-SVM": "passed"
+  },
+  "counts": {
+    "train": 167,
+    "cal": 42,
+    "test": 83
+  }
+}

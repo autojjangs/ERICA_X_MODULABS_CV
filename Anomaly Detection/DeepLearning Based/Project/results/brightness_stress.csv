@@ -1,0 +1,10 @@
+brightness_factor,model,normal_count,false_alarms,normal_fpr
+0.7,PaDiM-lite,20,20,1.0
+0.7,AutoEncoder,20,20,1.0
+0.7,OC-SVM,20,20,1.0
+1.0,PaDiM-lite,20,1,0.05
+1.0,AutoEncoder,20,0,0.0
+1.0,OC-SVM,20,1,0.05
+1.3,PaDiM-lite,20,3,0.15
+1.3,AutoEncoder,20,18,0.9
+1.3,OC-SVM,20,20,1.0
