@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.env
+.cache/
+tile_crack_runs/
+data/
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.zip
+# 제출용 그림과 표는 results/에 복사해 올린다.

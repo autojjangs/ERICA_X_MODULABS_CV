@@ -1,0 +1,8 @@
+MVTec AD tile images, Paul Bergmann et al., CVPR 2019.
+Original dataset: https://www.mvtec.com/research-teaching/datasets/mvtec-ad
+Mirror: https://huggingface.co/datasets/Voxel51/mvtec-ad
+Dataset and adapted images: CC BY-NC-SA 4.0, non-commercial educational use.
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: 512px resize, localized AI-generated crack and alpha compositing.
+Model: stable-diffusion-v1-5/stable-diffusion-inpainting (CreativeML OpenRAIL-M).
+All generated defect images are synthetic. Edit masks are not precise defect annotations.

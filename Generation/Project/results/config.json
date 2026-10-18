@@ -1,0 +1,26 @@
+{
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "model_revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "data_repo": "Voxel51/mvtec-ad",
+  "data_revision": "30a183a3b96e3aef953f230784b123b719b09d97",
+  "num_normals": 2,
+  "seeds": [
+    17,
+    42
+  ],
+  "strengths": [
+    0.65,
+    0.95
+  ],
+  "image_size": 512,
+  "mask_width": 36,
+  "num_inference_steps": 30,
+  "guidance_scale": 7.5,
+  "prompt": "a close-up inspection photograph of a gray speckled ceramic tile surface with one thin irregular dark crack, a realistic hairline fracture in the tile, same material and lighting, industrial inspection",
+  "negative_prompt": "text, watermark, drawing, cartoon, blurry, hole, missing tile, large broken pieces, colorful paint, new objects",
+  "mask_seed": 2026,
+  "feather_radius": 3,
+  "started_at": "2026-10-18T22:05:40.974440+09:00",
+  "scheduler": "DPMSolverMultistepScheduler",
+  "model_load_seconds": 9.14
+}

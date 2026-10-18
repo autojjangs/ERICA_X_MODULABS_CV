@@ -1,0 +1,26 @@
+[
+  {
+    "source_id": "tile_00",
+    "url": "https://huggingface.co/datasets/Voxel51/mvtec-ad/resolve/30a183a3b96e3aef953f230784b123b719b09d97/data/data_21/000-45.png",
+    "source_sha256": "522535bee0cc7e38a853dbdab79302f99f2f0f7fe66533e386f1b0c558ce5d0b",
+    "category": "tile",
+    "split": "train",
+    "defect": "good",
+    "resized_path": "inputs/tile_00.png",
+    "resized_sha256": "ce2d1e9e277372c37d62b3c9e4ee335587658100329c33bbb7165c545c5976c8",
+    "license": "CC BY-NC-SA 4.0",
+    "mirror_path": "data/data_21/000-45.png"
+  },
+  {
+    "source_id": "tile_01",
+    "url": "https://huggingface.co/datasets/Voxel51/mvtec-ad/resolve/30a183a3b96e3aef953f230784b123b719b09d97/data/data_21/001-45.png",
+    "source_sha256": "52199e4b50f6f4810ec40ade431de5942e5359de9e8eca70e4d817b14786fc0e",
+    "category": "tile",
+    "split": "train",
+    "defect": "good",
+    "resized_path": "inputs/tile_01.png",
+    "resized_sha256": "bde9100fb931ef3997a65cad306c533f61d75bf7fe9aa75e9a673039ed9e6b93",
+    "license": "CC BY-NC-SA 4.0",
+    "mirror_path": "data/data_21/001-45.png"
+  }
+]
